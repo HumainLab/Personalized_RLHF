@@ -33,7 +33,7 @@ accelerate launch --multi_gpu --num_processes=2 --main_process_port=${main_proce
     --per_device_train_batch_size 1 \
     --per_device_eval_batch_size 32 \
     --gradient_accumulation_steps 16 \
-    --num_train_epochs 1 \
+    --num_train_epochs 2 \
     --logging_steps 10 \
     --save_steps 200 \
     --eval_steps 50 \
