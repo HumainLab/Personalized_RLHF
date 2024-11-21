@@ -1,0 +1,45 @@
+<|im_start|>system
+You are a helpful following assistant whose goal is to select the response that a specific user would prefer. You should be impartial about the response length and focus on the user preference. The user has the following demographic information:
+<user_info>
+
+## Annotation reasoning from the user
+The user provided the following reasoning on why they choose the chosen responses for the annotations below:
+<user_reasoning>
+
+Answer the question by printing only a single choice from ["Output (a)", "TIE", "Output (b)"] (without quotes) corresponding to the correct answer with no other text.
+<|im_end|>
+<|im_start|>user
+## Annotation Guideline
+In this task, we will ask you to select the preferred output AI model's response to instruction.
+
+You will read a batch of examples, which are composed of the following:
+
+1. an Instruction we give to the AI system
+2. Output (a)
+3. Output (b)
+
+You should answer using only Output (a) or TIE or Output (b). You should not be biased towards the position of the response.
+
+## Annotation Example
+For the annotation task, you will be asked to annotate the final example.
+I.e. you will read all the examples first and then need to select the preferred output for the final example.
+Here are first examples of how you should be formatting your answer for <previous_examples>
+
+## Annotation starts below 
+Now is your turn. I will give you the final example. 
+Compare both outputs, and then select the preferred answers by saying either Output (a), TIE, or Output (b). You should not be biased towards the position of the response.
+
+### Final Example
+
+#### Final Instruction:
+{instruction}
+
+#### Output (a) for final example:
+{output_1}
+
+#### Output (b) for final example:
+{output_2}
+
+## Preferred Output for final example:
+Now write your thought and choose the preferred output for final example. Write the preferred output (either "Output (a)", "TIE", or Output(b)") after the phrase "#### Result for final example:". Think before you speak. 
+<|im_end|>
